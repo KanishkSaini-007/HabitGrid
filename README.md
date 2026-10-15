@@ -4,10 +4,10 @@
 A private habit tracker that turns everyday actions into a visible record. A yearly contribution grid, simple daily check-ins, and a little evidence of progress.
 
 ## Preview
-![HabitGrid desktop with fictional sample data](docs/desktop.svg)
+![HabitGrid desktop with fictional sample data](desktop.svg)
 <details><summary>Mobile screenshot</summary>
 
-![HabitGrid mobile with fictional sample data](docs/mobile.svg)
+![HabitGrid mobile with fictional sample data](mobile.svg)
 </details>
 
 The images are actual browser screenshots, embedded as JPEG pixels inside SVG wrappers. They are not UI mockups.
@@ -50,7 +50,8 @@ style.css        Ink / emerald visual system and responsive layouts
 logic.js         Pure dates, statistics, grid levels and import validation
 app.js           UI events, check-ins, storage, export and import
 tests.js         Node assertion tests
-docs/            Real desktop and mobile screenshots
+desktop.svg      Real desktop screenshot
+mobile.svg       Real mobile screenshot
 ```
 
 ## Data and privacy
