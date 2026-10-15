@@ -1,6 +1,8 @@
 # HabitGrid
 
 ### Small things. Often.
+
+[Open HabitGrid](https://kanishksaini-007.github.io/HabitGrid/)
 A private habit tracker that turns everyday actions into a visible record. A yearly contribution grid, simple daily check-ins, and a little evidence of progress.
 
 ## Preview
