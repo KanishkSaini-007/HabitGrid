@@ -173,6 +173,17 @@ function renderChecklist() {
     $("checklist").append(row);
   });
 }
+function bestStreak(h) {
+  let best = 0,
+    run = 0,
+    prev = null;
+  [...new Set(h.checks)].sort().forEach((k) => {
+    run = prev && L.key(L.shift(L.parse(prev), 1)) === k ? run + 1 : 1;
+    if (run > best) best = run;
+    prev = k;
+  });
+  return best;
+}
 function renderHabits() {
   $("habits").replaceChildren();
   if (!habits.length) {
@@ -211,6 +222,7 @@ function renderHabits() {
     const metrics = el("div", undefined, "habit-metrics");
     [
       [s.streak, "day streak"],
+      [bestStreak(h), "best streak"],
       [s.percent + "%", "completion"],
       [s.done, "check-ins"],
     ].forEach(([v, label]) => {
